@@ -46,3 +46,11 @@ flutter:
   assets:
      - graphics/
 
+  fonts:
+    - family: F
+      fonts:
+        - asset: fonts/FRegular.ttf
+        - asset: fonts/FBold.ttf
+          weight: 700
+        - asset: fonts/FLight.ttf
+          weight: 300
