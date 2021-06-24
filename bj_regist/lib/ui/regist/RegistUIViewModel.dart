@@ -6,6 +6,7 @@ import 'package:bj_regist/ui/regist/RegistStep2Comp.dart';
 import 'package:bj_regist/ui/regist/RegistStep3Comp.dart';
 import 'package:flutter/cupertino.dart';
 
+
 class RegistUIViewModel with ChangeNotifier {
   static RegistUIViewModel? _instance;
   int _currentFlowStep = 0;
@@ -21,7 +22,7 @@ class RegistUIViewModel with ChangeNotifier {
   var monthlyIncomeItems = ["< Rp 5 juta,-", "5 juta Sampai 10 juta", "> 10 juta"];
   var monthlyExpenseItems = ["< Rp 1 juta,-", "1 juta Sampai 5 juta", "5 juta Sampai 10 juta", "> 10 juta"];
 
-  /// simulate persistData with singleTone
+  /// FIXME: simulate persistData with singleTone
   static RegistUIViewModel? get instance {
     if (_instance == null) {
       _instance = RegistUIViewModel();

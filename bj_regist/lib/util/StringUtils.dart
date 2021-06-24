@@ -2,7 +2,6 @@
   /// Check if a String is a valid email.
   /// Return true if it is valid.
   bool isValidEmail() {
-    return true;
     // Null or empty string is invalid
     if (this.isEmpty) {
       return false;

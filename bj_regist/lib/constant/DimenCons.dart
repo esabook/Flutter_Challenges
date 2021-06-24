@@ -11,5 +11,6 @@ class DimeCons{
   static const double dimen_32 = 32;
   static const double dimen_48 = 48;
   static const double dimen_56 = 56;
+  static const double dimen_72 = 72;
   static const double dimen_86 = 86;
 }
