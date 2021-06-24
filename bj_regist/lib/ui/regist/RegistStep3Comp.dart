@@ -56,7 +56,7 @@ class _RegistStep3CompState extends State<RegistStep3Comp>
               ],
               content: Column(
                 children: [
-                  Text("email: ${model.email}"),
+                  Text("${StringCons.email}: ${model.email}"),
                   Text(
                       "${StringCons.goalForActivation}: ${model.goalActivation}"),
                   Text("${StringCons.monthlyIncome}: ${model.monthlyIncome}"),
@@ -71,7 +71,8 @@ class _RegistStep3CompState extends State<RegistStep3Comp>
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.fromLTRB(DimeCons.dimen_20, DimeCons.dimen_10, DimeCons.dimen_20, DimeCons.dimen_20),
+      padding: EdgeInsets.fromLTRB(DimeCons.dimen_20, DimeCons.dimen_10,
+          DimeCons.dimen_20, DimeCons.dimen_20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         verticalDirection: VerticalDirection.down,
@@ -81,13 +82,18 @@ class _RegistStep3CompState extends State<RegistStep3Comp>
             maxRadius: 36,
             child: SizedBox(
               width: DimeCons.dimen_72,
-              height: DimeCons.dimen_72 ,
+              height: DimeCons.dimen_72,
               child: AnimatedBuilder(
                   animation: animationController!,
                   builder: (context, child) => Container(
                       child: Icon(Icons.circle_notifications,
                           color: Colors.white,
-                          size:min(DimeCons.dimen_72, max(DimeCons.dimen_56, DimeCons.dimen_72 * animationController!.value))))),
+                          size: min(
+                              DimeCons.dimen_72,
+                              max(
+                                  DimeCons.dimen_56,
+                                  DimeCons.dimen_72 *
+                                      animationController!.value))))),
             ),
           ),
           Container(

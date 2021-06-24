@@ -1,4 +1,3 @@
-import 'dart:collection';
 
 import 'package:bj_regist/ui/regist/RegistStep0Comp.dart';
 import 'package:bj_regist/ui/regist/RegistStep1Comp.dart';

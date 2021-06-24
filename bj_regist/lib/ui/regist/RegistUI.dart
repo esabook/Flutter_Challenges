@@ -1,9 +1,6 @@
-import 'dart:io';
 
 import 'package:bj_regist/constant/ColorCons.dart';
 import 'package:bj_regist/constant/DimenCons.dart';
-import 'package:bj_regist/constant/StringCons.dart';
-import 'package:bj_regist/ui/regist/RegistStep0Comp.dart';
 import 'package:bj_regist/ui/regist/RegistUIViewModel.dart';
 import 'package:bj_regist/widget/CircleTextStep.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +13,6 @@ class RegistUI extends StatefulWidget {
 }
 
 class _RegistUIState extends State<RegistUI> {
-  final _formKey = GlobalKey<FormState>();
   String _title = "Create Account";
   RegistUIViewModel model = RegistUIViewModel.instance!;
 

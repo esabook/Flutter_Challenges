@@ -2,18 +2,25 @@ import 'package:bj_regist/constant/DimenCons.dart';
 import 'package:flutter/material.dart';
 
 class CircleTextStep extends StatelessWidget {
-  int? maxProgressStep = 0;
-  int? currentProgressStep = 0;
-
-  CircleTextStep({Key? key, this.maxProgressStep, this.currentProgressStep})
+  CircleTextStep({Key? key, this.maxProgressStep = 0, this.currentProgressStep = 0})
       : super(key: key);
+
+  final int maxProgressStep;
+  final int currentProgressStep;
+
+  final Widget horizontalLineWidget = Center(
+    child: Container(
+      height: DimeCons.dimen_4,
+      color: Colors.black,
+    ),
+  );
 
   @override
   Widget build(BuildContext context) {
     List<Widget> circleLine = List.empty(growable: true);
-    for (int i = 1; i <= maxProgressStep!; i++) {
+    for (int i = 1; i <= maxProgressStep; i++) {
       circleLine
-          .add(generateCircleText(i.toString(), i <= currentProgressStep!));
+          .add(generateCircleText(i.toString(), i <= currentProgressStep));
     }
     return Stack(alignment: Alignment.center, children: [
       horizontalLineWidget,
@@ -24,12 +31,6 @@ class CircleTextStep extends StatelessWidget {
     ]);
   }
 
-  Widget horizontalLineWidget = Center(
-    child: Container(
-      height: DimeCons.dimen_4,
-      color: Colors.black,
-    ),
-  );
 
   Widget generateCircleText(String _text, bool _checked) => Container(
         width: DimeCons.dimen_48,
