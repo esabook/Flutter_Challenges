@@ -51,9 +51,8 @@ class _RegistStep1CompState extends State<RegistStep1Comp> {
             "Password will be used to login to account",
             style: TextStyle(color: Colors.white, fontSize: DimeCons.dimen_20),
           ),
-          Divider(
+          Container(
             height: DimeCons.dimen_48,
-            color: ColorCons.accent,
           ),
           TextField(
             onChanged: (it) => setState(() => model.tempPassword = it),
@@ -87,9 +86,8 @@ class _RegistStep1CompState extends State<RegistStep1Comp> {
               hintText: StringCons.createPassword,
             ),
           ),
-          Divider(
+          Container(
             height: DimeCons.dimen_32,
-            color: ColorCons.accent,
           ),
           RichText(
               text: TextSpan(
@@ -103,9 +101,8 @@ class _RegistStep1CompState extends State<RegistStep1Comp> {
                         color: ColorCons.highlight,
                         fontWeight: FontWeight.bold)),
               ])),
-          Divider(
+          Container(
             height: DimeCons.dimen_48,
-            color: ColorCons.accent,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
